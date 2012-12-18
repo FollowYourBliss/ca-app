@@ -1,0 +1,11 @@
+<%= t :parse_url %>
+<%= simple_form_for :sample, url: "/results" do |f| %>
+  <%= f.input :address, label: false %>
+  <%= f.submit t :submit %>
+<% end %>
+
+<%= t :parse_whole_text %>
+<%= simple_form_for :text, url: "/results" do |f| %>
+  <%= f.input :content, as: :text, label: false %>
+  <%= f.submit t :submit %>
+<% end %>

@@ -12,5 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require twitter/bootstrap
+// Loads all Bootstrap javascripts
 //= require_tree .

@@ -1,0 +1,13 @@
+# encoding utf-8
+
+
+pl:
+  page_title: "Analiza tekstu dla pod względem metod pozycjonowania"
+  parse_url: "Tutaj wklej adres URL do strony, którą chcesz analizować"
+  parse_whole_text: "Tutaj wklej tekst HTML strony, którą chcesz analizować"
+  submit: "Analizuj"
+  problems:
+    :h1: "Znacznik <h1> może wystąpić w tekście tylko raz"
+    :description: "Tag meta description jest pusty"
+    :keywords: "Tag meta keywords jest pusty"
+  result_title: "Wyniki analizy"

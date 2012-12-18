@@ -2,4 +2,12 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  page_title: "Text Analyser for SEO copywritters"
+  parse_url: "Here you can parse URL address"
+  parse_whole_text: "Here you can parse whole text"
+  submit: "Submit"
+  problems:
+    h1: "It can be only one <h1> tag in whole text"
+    description: "Meta description empty"
+    keywords: "Meta keywords empty"
+  result_title: "Result raport"
