@@ -7,7 +7,10 @@ pl:
   parse_whole_text: "Tutaj wklej tekst HTML strony, którą chcesz analizować"
   submit: "Analizuj"
   problems:
-    :h1: "Znacznik <h1> może wystąpić w tekście tylko raz"
-    :description: "Tag meta description jest pusty"
-    :keywords: "Tag meta keywords jest pusty"
+    h1: "Znacznik <h1> może wystąpić w tekście tylko raz"
+    description: "Tag meta description jest pusty"
+    keywords: "Tag meta keywords jest pusty"
+    title: "Tag title jest pusty"
   result_title: "Wyniki analizy"
+  page_url_analyse: "Adres strony, którą analizujemu"
+  thare_are_problems: "Wykryto następujące problemy do rozwiązania: "

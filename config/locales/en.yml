@@ -10,4 +10,7 @@ en:
     h1: "It can be only one <h1> tag in whole text"
     description: "Meta description empty"
     keywords: "Meta keywords empty"
+    title: "Title tag is empty"
   result_title: "Result raport"
+  page_url_analyse: "Page what we analyse: "
+  thare_are_problems: "Problems to fix: "
