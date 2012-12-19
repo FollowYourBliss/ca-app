@@ -1,0 +1,119 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree .
+*/
+
+
+.error-color(@color){
+  -moz-box-shadow: 0px 0px 15px @color;
+  -webkit-box-shadow: 0px 0px 15px @color;
+  box-shadow: 0px 0px 15px @color;
+  background-color: white;
+  color: @color;
+  margin-left: 20px;
+}
+
+.blue-gradient {
+background: #e8ead3; /* Old browsers */
+background: -moz-linear-gradient(left, #e8ead3 0%, #ffffff 99%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#e8ead3), color-stop(99%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, #e8ead3 0%,#ffffff 99%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, #e8ead3 0%,#ffffff 99%); /* Opera 11.10+ */
+background: linear-gradient(to right, #e8ead3 0%,#ffffff 99%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8ead3', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
+
+.purple-gradient {
+  background: #000000; /* Old browsers */
+  background: -moz-linear-gradient(left, #000000 0%, #8c1388 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(100%,#8c1388)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #000000 0%,#8c1388 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #000000 0%,#8c1388 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #000000 0%,#8c1388 100%); /* IE10+ */
+  background: linear-gradient(to right, #000000 0%,#8c1388 100%); /* W3C */
+}
+
+
+.red {
+  color: red;
+}
+
+.html_content {
+  position: relative;
+  padding: 15px;
+  margin: 10px;
+  background-color: #E0E0E0;
+  -moz-box-shadow: 5px 5px 25px purple;
+  -webkit-box-shadow: 5px 5px 25px purple;
+  box-shadow: 5px 5px 25px purple;
+
+
+}
+.purple{
+  color:purple;
+  text-shadow: grey 1px 1px 2px;
+}
+
+h1 {
+  .purple-gradient();
+  padding: 35px 40px;
+  margin: 15px 5px;
+  color: white;
+  font-size: 35px;
+}
+
+.title_undeclared {
+  .error-color(orange)
+}
+
+
+.content_empty {
+  .error-color(purple)
+}
+
+
+.alt_undeclared{
+  .error-color(red)
+}
+
+
+.alt_empty{
+  .error-color(red)
+}
+
+
+.href_undeclared{
+  .error-color(blue)
+}
+
+
+.href_empty{
+  .error-color(blue)
+}
+
+
+.src_undeclared{
+  .error-color(black)
+}
+
+.src_empty{
+  .error-color(black)
+}
+
+.content {
+  padding: 2px 17px;
+  margin: 20px 5px;
+  background-color: #EEE;
+  .blue-gradient();
+  -moz-box-shadow: 5px 5px 25px black;
+  -webkit-box-shadow: 5px 5px 25px black;
+  box-shadow: 5px 5px 25px black;
+  -moz-border-radius:5px; /* FF */
+  -webkit-border-radius:5px; /* przeglądarki z webkitem (Safari, Chrome itp.) */
+  -khtml-border-radius:5px; /* przeglądarki typu K-meleon (typowo Linuxowe) */
+  border-radius:5px; /* pozostałe przeglądarki */
+
+}

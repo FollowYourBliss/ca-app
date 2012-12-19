@@ -1,4 +1,10 @@
-<%= t :thare_are_problems %><br/>
-<% problems.each_with_index do |problem, index| %>
-  <%= index+1 %>. <%= t problem.to_sym, scope: [:problems] %><br/>
+<% if problems.count > 0 %>
+  <div class="content">
+    <h3 class="purple"><%= t :thare_are_problems %></h3>
+    <% problems.each_with_index do |problem, index| %>
+      <span class="purple"><%= index+1 %>.</span> <%= t problem.to_sym, scope: [:problems] %><br/>
+    <% end %>
+  <br/>
+  </div>
+
 <% end %>

@@ -1,0 +1,17 @@
+<% # encoding: utf-8 %>
+<% if tag_problems %>
+  <div class="content">
+  <h3 class="purple"><%= t :problems_with_tags %></h3>
+  <div class="legend">
+    <%= t :legend %><br/><br/>
+    <span class="title_undeclared"><%= t :title , scope: [:problem_with] %></span>
+    <span class="content_empty"><%= t :content , scope: [:problem_with] %></span>
+    <span class="alt_undeclared"><%= t :alt , scope: [:problem_with] %></span>
+    <span class="href_undeclared"><%= t :href , scope: [:problem_with] %></span>
+    <span class="src_undeclared"><%= t :src , scope: [:problem_with] %></span><br/><br/>
+  </div>
+  <frameset><div class="html_content">
+    <%= raw html %>
+  </div></frameset><br/>
+  </div>
+<% end %>

@@ -11,17 +11,29 @@ gem 'sqlite3'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
+  gem 'sass-rails',   '~> 3.2'
   gem 'coffee-rails', '~> 3.2.1'
+  gem "therubyracer"
+  gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+  gem "twitter-bootstrap-rails"
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
+  gem 'therubyracer', :platforms => :ruby
+  gem "jquery-rails"
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :development do
+  gem 'sass-rails',   '~> 3.2'
+  gem 'coffee-rails', '~> 3.2.1'
+  gem "therubyracer"
+  gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+  gem "twitter-bootstrap-rails"
 end
 
 
 gem 'simple_form'
+
 gem "rails_best_practices"
 gem "ca", path: "../ca"
 
